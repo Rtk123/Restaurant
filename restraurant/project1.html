@@ -1,0 +1,325 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="project1.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#food">Category</a></li>
+          <li><a href="#food-menu">Menu</a></li>
+          <li><a href="#testimonials">Testimonial</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <h1 class="logo">RS</h1>
+      </div>
+    </nav>
+
+    <section class="showcase-area" id="showcase">
+      <div class="showcase-container">
+        <h1 class="main-title" id="home">Eat Right Food</h1>
+        <p>Eat Healty, it is good for our health.</p>
+        <a href="#food-menu" class="btn btn-primary">Menu</a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-text">
+          <p class="small">About Us</p>
+          <h2>We've been making healthy food for the past 10 years</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ab eos
+            omnis, nobis dignissimos perferendis et officia architecto.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="food" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Types of Food Section -->
+    <section id="food">
+      <h2>Types of food</h2>
+      <div class="food-container container">
+        <!-- Fruit Section -->
+        <div class="food-type fruite">
+          <div class="img-container">
+            <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="fruit" />
+            <div class="img-content">
+              <h3>Fruit</h3>
+              <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vegetable Section -->
+        <div class="food-type vegetable">
+          <div class="img-container">
+            <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="vegetable" />
+            <div class="img-content">
+              <h3>Vegetable</h3>
+              <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grain Section -->
+        <div class="food-type grain">
+          <div class="img-container">
+            <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="grain" />
+            <div class="img-content">
+              <h3>Grain</h3>
+              <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Food Type: Meat -->
+        <div class="food-type meat">
+          <div class="img-container">
+            <img src="https://i.postimg.cc/YqTjt0hM/food4.jpg" alt="meat" />
+            <div class="img-content">
+              <h3>Meat</h3>
+              <a href="https://en.wikipedia.org/wiki/Meat" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Food Type: Seafood -->
+        <div class="food-type seafood">
+          <div class="img-container">
+            <img src="https://i.postimg.cc/g0y6Fczg/food5.jpg" alt="seafood" />
+            <div class="img-content">
+              <h3>Seafood</h3>
+              <a href="https://en.wikipedia.org/wiki/Seafood" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="food-menu">
+      <h2 class="food-menu-heading">Food Menu</h2>
+      <div class="food-menu-container container">
+    
+        <!-- Row 1 -->
+        <a href="#" class="food-menu-item" data-food="Fruit Salad" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="Fruit Salad" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Fruit Salad</h2>
+            <p>A refreshing mix of seasonal fruits.</p>
+            <p class="food-price">Price: &#8377; 150</p>
+          </div>
+        </a>
+    
+        <a href="#" class="food-menu-item" data-food="Vegetable Stir Fry" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="Vegetable Stir Fry" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Vegetable Stir Fry</h2>
+            <p>Mixed vegetables sautéed with herbs and spices.</p>
+            <p class="food-price">Price: &#8377; 180</p>
+          </div>
+        </a>
+    
+        <a href="#" class="food-menu-item" data-food="Grain Bowl" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="Grain Bowl" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Grain Bowl</h2>
+            <p>A hearty bowl of mixed grains and veggies.</p>
+            <p class="food-price">Price: &#8377; 220</p>
+          </div>
+        </a>
+    
+        <!-- Row 2 -->
+        <a href="#" class="food-menu-item" data-food="Pizza" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="Pizza" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Pizza</h2>
+            <p>Delicious pizza topped with fresh ingredients.</p>
+            <p class="food-price">Price: &#8377; 350</p>
+          </div>
+        </a>
+    
+        <a href="#" class="food-menu-item" data-food="Burger" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="Burger" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Burger</h2>
+            <p>Juicy burger with fresh veggies and cheese.</p>
+            <p class="food-price">Price: &#8377; 200</p>
+          </div>
+        </a>
+    
+        <a href="#" class="food-menu-item" data-food="Pasta" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="https://i.postimg.cc/Jnxc8xQt/food-menu6.jpg" alt="Pasta" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Pasta</h2>
+            <p>Italian pasta with fresh tomato sauce.</p>
+            <p class="food-price">Price: &#8377; 250</p>
+          </div>
+        </a>
+    
+        <!-- Row 3 -->
+        <a href="#" class="food-menu-item" data-food="Sushi" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="shushi.jpeg" alt="Sushi" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Sushi</h2>
+            <p>Fresh sushi rolls with fish and veggies.</p>
+            <p class="food-price">Price: &#8377; 400</p>
+          </div>
+        </a>
+    
+        <a href="#" class="food-menu-item" data-food="Tacos" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="tacos.jpeg" alt="Tacos" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Tacos</h2>
+            <p>Spicy tacos with meat and fresh veggies.</p>
+            <p class="food-price">Price: &#8377; 180</p>
+          </div>
+        </a>
+    
+        <a href="#" class="food-menu-item" data-food="Dessert" onclick="searchFood(event)">
+          <div class="food-img">
+            <img src="desert.jpeg" alt="Dessert" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-title">Dessert</h2>
+            <p>Sweet dessert to complete your meal.</p>
+            <p class="food-price">Price: &#8377; 150</p>
+          </div>
+        </a>
+    
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <h2 class="testimonial-title">What Our Customers Say</h2>
+      <div class="testimonial-container container">
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="Ritik.jpg" alt="" />
+              <p class="customer-name">Ritik Tiwari</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+            "A delightful culinary experience! The food was fresh, flavorful,
+             and perfectly seasoned, offering a harmonious balance of taste and texture. 
+             Each dish was crafted with attention to detail, presenting vibrant colors and rich aromas.
+             
+             The portion sizes were generous, and the quality of ingredients was evident in every bite.
+              Whether it's a hearty entrée or a light snack, this meal delivers satisfaction and leaves you craving more. 
+              Highly recommended for food lovers seeking both quality and taste!"
+          </p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img
+                src="bebo.jpg"
+                alt=""
+              />
+              <p class="customer-name">Shreya dubey</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+            "A delightful culinary experience! The food was fresh, flavorful,
+            and perfectly seasoned, offering a harmonious balance of taste and texture. 
+            Each dish was crafted with attention to detail, presenting vibrant colors and rich aromas.
+            
+            The portion sizes were generous, and the quality of ingredients was evident in every bite.
+             Whether it's a hearty entrée or a light snack, this meal delivers satisfaction and leaves you craving more. 
+             Highly recommended for food lovers seeking both quality and taste!"
+          </p>
+         
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container container">
+        <div class="contact-img">
+          <img src="ritiklinkdin.jpg" alt="restaurant" />
+        </div>
+
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="E-Mail" />
+          <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+          <a href="#" class="btn btn-primary">Submit</a>
+
+          <!-- Social Media Section -->
+          <div class="social-icons">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100029618632756" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ritiktiwari6407/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/7033428573" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/Rtk123" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ritik-tiwari-48b129256" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <h2>Restaurant &copy; All rights reserved by Ritik Tiwari</h2>
+    </footer>
+    <script src="project1.js"></script>
+  </body>
+</html>
